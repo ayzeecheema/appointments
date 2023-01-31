@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\Watermark::class,
+        // Commands\Watermark::class,
     ];
     /**
      * Define the application's command schedule.
@@ -23,8 +23,8 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('image:watermark')
-            ->everyMinute();
+        // $schedule->command('image:watermark')
+        //     ->everyMinute();
     }
     /**
      * Register the commands for the application.
